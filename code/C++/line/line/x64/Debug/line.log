@@ -1,0 +1,4 @@
+﻿D:\Program Files (x86)\VS\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(line.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+D:\Program Files (x86)\VS\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8029: 中间目录或输出目录无法驻留在临时目录下，因为这可能会导致增量生成出现问题。
+  源.cpp
+  line.vcxproj -> D:\HYD\work\code\C++\line\x64\Debug\inline.exe

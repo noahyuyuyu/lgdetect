@@ -1,0 +1,9 @@
+ # 判断当前监管区域在主仓还是外仓
+                        Cur_Alarm_InternalSupervisor_Alone_DeteArea = SensorInfo['ALARM_INFO'][AlarmIDIndex.Alarm_Alone]['DeteAreaPoints'][i_area] # 当前房间单人留仓检测区域
+                        Cur_Alarm_InternalSupervisor_Alone_DeteBbox = TransPointsToBbox(Cur_Alarm_InternalSupervisor_Alone_DeteArea)
+                        Cur_Alarm_InternalSupervisor_DeteBbox = TransPointsToBbox(CurAlarmDeteArea[0])
+                        i_iou=iou(Cur_Alarm_InternalSupervisor_Alone_DeteBbox,Cur_Alarm_InternalSupervisor_DeteBbox)
+                        if (i_iou>0):
+                            Cur_Alarm_InternalSupervisor_ExistDeteArea = True
+                        else:
+                            Cur_Alarm_InternalSupervisor_ExistDeteArea = False
